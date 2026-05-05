@@ -1,0 +1,30 @@
+[
+  {
+    "id": "a05cd704-bae7-4364-8bdb-77d0ac1fa399",
+    "title": "Nature",
+    "category": "Wildlife",
+    "location": "sutton",
+    "description": "nice",
+    "imageUrl": "https://ecowatch50373.blob.core.windows.net/sightings/6c250f76-d188-4c63-a616-6ecf555c17a1.jpg",
+    "createdAt": "2026-05-05T01:16:20.985Z"
+  },
+  {
+    "id": "f9713091-c627-4771-8046-10aa3cd03432",
+    "title": "weer",
+    "category": "Wildlife",
+    "location": "uk",
+    "description": "werwwersds",
+    "imageUrl": "https://ecowatch50373.blob.core.windows.net/sightings/2a3ad3a9-a0e5-4404-bd5f-2fe439e81f8c.png",
+    "createdAt": "2026-05-05T00:06:30.882Z",
+    "updatedAt": "2026-05-05T01:06:42.416Z"
+  },
+  {
+    "id": "bbad61cc-0db4-4e56-b1c9-7185425ea63f",
+    "title": "efefefe",
+    "category": "Flooding",
+    "location": "effef",
+    "description": "efefefef",
+    "imageUrl": "https://learning.ulster.ac.uk/ultra/courses/_378139_1/outline/file/_9496138_1",
+    "createdAt": "2026-05-01T23:23:01.291Z"
+  }
+]

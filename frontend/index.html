@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ECO-WATCH</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <h1>ECO-WATCH</h1>
+      <p>Community environmental sightings platform</p>
+    </div>
+  </header>
+
+  <main class="page-layout">
+    <section class="card">
+      <h2>Report a Sighting</h2>
+      <p class="section-intro">
+        Upload details about pollution, wildlife, flooding, or other environmental issues.
+      </p>
+
+      <form id="sightingForm">
+        <input type="hidden" id="sightingId" />
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input id="title" type="text" placeholder="Plastic waste near river" required />
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="">Select a category</option>
+            <option value="Pollution">Pollution</option>
+            <option value="Wildlife">Wildlife</option>
+            <option value="Flooding">Flooding</option>
+            <option value="Fly-tipping">Fly-tipping</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input id="location" type="text" placeholder="London, UK" required />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" placeholder="Describe what you saw..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="imageFile">Upload Image</label>
+          <input id="imageFile" type="file" accept="image/*" />
+          <small>Choose an image from your computer. This will later be replaced with Azure Blob Storage.</small>
+        </div>
+
+        <div class="button-row">
+          <button type="submit" id="submitButton">Add Sighting</button>
+          <button type="button" id="cancelEditButton" class="secondary-button hidden">Cancel Edit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <div>
+          <h2>Submitted Sightings</h2>
+          <p class="section-intro">Your created sightings will appear below.</p>
+        </div>
+        <span id="sightingCount" class="count-badge">0</span>
+      </div>
+
+      <div id="sightingsList" class="sightings-list">
+        <p class="empty-message">No sightings added yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

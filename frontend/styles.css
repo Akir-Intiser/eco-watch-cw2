@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f7f2;
+  color: #1f2d24;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #14532d, #22c55e);
+  color: white;
+  padding: 32px 24px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.site-header p {
+  margin: 8px 0 0;
+  font-size: 17px;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(20, 83, 45, 0.12);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  color: #14532d;
+}
+
+.section-intro {
+  margin: 0 0 20px;
+  color: #5f6f64;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #cbd5c0;
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+small {
+  display: block;
+  margin-top: 6px;
+  color: #6b7280;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #15803d;
+  color: white;
+}
+
+button:hover {
+  background: #166534;
+}
+
+.secondary-button {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.secondary-button:hover {
+  background: #d1d5db;
+}
+
+.hidden {
+  display: none;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.count-badge {
+  background: #dcfce7;
+  color: #14532d;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.sightings-list {
+  display: grid;
+  gap: 16px;
+}
+
+.empty-message {
+  color: #6b7280;
+  padding: 20px;
+  border: 1px dashed #cbd5c0;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.sighting-card {
+  border: 1px solid #d9ead3;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fbfdf9;
+}
+
+.sighting-card h3 {
+  margin: 0 0 8px;
+  color: #14532d;
+}
+
+.sighting-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: #ecfdf5;
+  color: #047857;
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.sighting-card p {
+  line-height: 1.5;
+  color: #374151;
+}
+
+.sighting-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 850px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header h1 {
+    font-size: 32px;
+  }
+}
