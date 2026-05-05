@@ -5,3 +5,8 @@ api/.env
 .DS_Store
 Thumbs.db
 api/uploads/
+api-deploy-clean/
+api-deploy-with-modules/
+api-deploy.zip
+frontend/index.backup.html
+frontend/styles.backup.css
