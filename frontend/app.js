@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/sightings";
+const API_URL = "https://eco-watch-api-50373.azurewebsites.net/api/sightings";
 
 const sightingForm = document.getElementById("sightingForm");
 const sightingIdInput = document.getElementById("sightingId");
